@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_yujin/constant/size.dart';
 import 'package:instagram_yujin/screens/feed_page.dart';
 import 'package:instagram_yujin/screens/profile_page.dart';
+import 'package:instagram_yujin/screens/search_page.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -13,9 +14,7 @@ class _MainPageState extends State {
 
   static List<Widget> _widgetOptions = <Widget>[
     FeedPage(),
-    Container(
-      color: Colors.primaries[1],
-    ),
+    SearchPage(),
     Container(
       color: Colors.primaries[2],
     ),
