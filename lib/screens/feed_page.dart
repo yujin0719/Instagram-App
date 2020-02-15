@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_yujin/constant/size.dart';
 import 'package:instagram_yujin/utils/profile_image_path.dart';
 import 'package:instagram_yujin/widgets/comment.dart';
+import 'package:instagram_yujin/widgets/my_progress_indicator.dart';
 
 class FeedPage extends StatelessWidget {
   @override
@@ -150,17 +151,7 @@ class FeedPage extends StatelessWidget {
     return CachedNetworkImage(
       imageUrl: 'https://picsum.photos/id/$index/200/200',
       placeholder: (context, url) {
-        return Container(
-          width: size.width,
-          height: size.width,
-          child: Center(
-            child: SizedBox(
-              width: 30,
-              height: 30,
-              child: Image.asset('assets/loading_img.gif'),
-            ),
-          ),
-        );
+        return MyProgressIndicator();
       },
       imageBuilder: (BuildContext context, ImageProvider imageProvider) =>
           AspectRatio(
@@ -176,3 +167,5 @@ class FeedPage extends StatelessWidget {
     );
   }
 }
+
+
