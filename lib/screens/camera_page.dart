@@ -82,7 +82,7 @@ class _CameraPageState extends State<CameraPage> {
 
   Widget _takeVideoPage() {
     return Container(
-      color: Colors.deepOrange,
+      color: Colors.Orange,
     );
   }
 }
