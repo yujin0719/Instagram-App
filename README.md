@@ -1,4 +1,4 @@
-# Instagram 클론
+## flutter를 이용한 Instagram 클론앱
 <p float="left">
   <img src="./img/insta.png" width="421" height="311"> 
 </p>
@@ -6,7 +6,7 @@
 
 <hr>
 
-## Page 
+### Page 
 
  page | 화면 
 ---|---
@@ -19,7 +19,7 @@ login|<img src="./img/login.png" width="138" height="300">
 
 <hr>
 
-## Development Environment & Language
+### Development Environment & Language
 - Android studio 3.5.3
 - Version 11.5 
 - Flutter 1.17.4
